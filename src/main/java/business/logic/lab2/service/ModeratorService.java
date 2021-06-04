@@ -1,9 +1,7 @@
 package business.logic.lab2.service;
 
-import business.logic.lab2.configuration.BookingApiConfigurationProperties;
 import business.logic.lab2.dto.CancelDTO;
 import business.logic.lab2.entity.Booking;
-import business.logic.lab2.entity.User;
 import business.logic.lab2.repository.BookingRepository;
 import business.logic.lab2.repository.UserRepository;
 import business.logic.lab2.utils.BookingEntityManager;

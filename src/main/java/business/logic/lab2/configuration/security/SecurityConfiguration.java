@@ -1,4 +1,4 @@
-package business.logic.lab2.configuration;
+package business.logic.lab2.configuration.security;
 
 import business.logic.lab2.configuration.jwt.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;

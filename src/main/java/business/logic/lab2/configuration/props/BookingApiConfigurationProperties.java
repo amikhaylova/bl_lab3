@@ -1,4 +1,4 @@
-package business.logic.lab2.configuration;
+package business.logic.lab2.configuration.props;
 
 import lombok.Getter;
 import lombok.Setter;

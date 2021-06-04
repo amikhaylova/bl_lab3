@@ -1,6 +1,6 @@
 package business.logic.lab2.service;
 
-import business.logic.lab2.configuration.HotelsApiConfigurationProperties;
+import business.logic.lab2.configuration.props.HotelsApiConfigurationProperties;
 import business.logic.lab2.dto.HotelDTO;
 import business.logic.lab2.exceptions.CityNotFoundException;
 import business.logic.lab2.utils.JsonParser;

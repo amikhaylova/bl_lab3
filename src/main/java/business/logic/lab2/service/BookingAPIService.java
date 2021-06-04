@@ -1,6 +1,6 @@
 package business.logic.lab2.service;
 
-import business.logic.lab2.configuration.BookingApiConfigurationProperties;
+import business.logic.lab2.configuration.props.BookingApiConfigurationProperties;
 import business.logic.lab2.dto.BookingDTO;
 import business.logic.lab2.entity.Booking;
 import business.logic.lab2.exceptions.BookingFailException;

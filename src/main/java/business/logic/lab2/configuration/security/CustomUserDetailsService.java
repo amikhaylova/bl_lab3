@@ -1,5 +1,6 @@
-package business.logic.lab2.configuration;
+package business.logic.lab2.configuration.security;
 
+import business.logic.lab2.configuration.security.CustomUserDetails;
 import business.logic.lab2.entity.ServiceStaff;
 import business.logic.lab2.service.ServiceStaffService;
 import org.springframework.beans.factory.annotation.Autowired;

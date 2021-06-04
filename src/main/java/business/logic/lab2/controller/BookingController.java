@@ -1,18 +1,23 @@
 package business.logic.lab2.controller;
 
 import business.logic.lab2.dto.BookingDTO;
+import business.logic.lab2.dto.EmailMessageDTO;
 import business.logic.lab2.dto.HotelDTO;
 import business.logic.lab2.exceptions.BookingFailException;
 import business.logic.lab2.exceptions.IncorrectDateException;
 import business.logic.lab2.service.BookingAPIService;
 import business.logic.lab2.service.HotelsAPIService;
+import org.apache.activemq.jms.pool.PooledConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.jms.*;
 import javax.validation.constraints.Min;
 import java.util.Date;
 import java.util.List;
@@ -46,11 +51,8 @@ public class BookingController {
 
     @PostMapping(path = "/book")
     public ResponseEntity<?> bookHotel(@RequestBody BookingDTO bookingDTO) {
-       /* if (!bookingAPIService.bookHotel(bookingDTO))
-            throw new BookingFailException("Booking failed.");*/
         bookingAPIService.bookHotel(bookingDTO);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
 
 }

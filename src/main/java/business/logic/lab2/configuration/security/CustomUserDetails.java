@@ -1,4 +1,4 @@
-package business.logic.lab2.configuration;
+package business.logic.lab2.configuration.security;
 
 import business.logic.lab2.entity.ServiceStaff;
 import org.springframework.security.core.GrantedAuthority;
